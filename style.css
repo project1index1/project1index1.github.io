@@ -1,0 +1,263 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar{
+    width: 100%;
+    height: 150px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    background: white;
+    padding: 20px;
+    border-radius:50%;
+    /* border: 1px solid red; */
+    margin-right: 20px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.forh1{
+    margin-top: 150px;
+    /* border: 1px solid red; */
+    
+}
+.parent_class{
+    background: url(img/bg.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    
+
+}
+#feh1{
+    /* padding: 25px; */
+    
+    font-size: 30px;
+    font-family: monospace;
+    color: rgb(0, 17, 255);
+}
+.mind_class{
+    background:rgb(49,85,0);
+    width: 700px;
+    height: 200px;
+   margin: auto;
+  margin-top: 150px;
+    border-radius: 25px ;
+}
+
+.data_div_class{
+    display: flex;
+    padding: 0 20px;
+    
+   
+}
+
+.one{
+    display: flex;
+}
+
+#fh1{
+    
+    font-size: 35px;
+    font-family: 'Pushster', cursive;
+    text-align: center;
+}
+
+.data_mini_div{
+    margin-top: 20px;
+    width: 70px;
+    height: 70px;
+    border: 1px solid red;
+    text-align: center;
+    font-size: 55px;
+    font-family: 'Pushster', cursive;
+    margin-left: 35px;
+    background: white;
+    color: red;
+    border-radius: 20px;
+}
+
+.data_mini_div_text{
+    margin-top: 20px;
+    width: 70px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Pushster', cursive;
+    margin-left: 35px;
+    background: white;
+    border-radius: 10px;
+}
+
+
+.forh1_off{
+    display: none;
+}
+@media screen and (max-width:750px){
+    .data_div_class{
+        display: flex;
+        flex-direction: column;
+    }
+    .mind_class{
+        
+        width: 400px;
+        height: 350px;
+      
+    }
+    .forh1{
+        margin-top: 50px;
+       
+    }
+}
+
+@media screen and (max-width:450px){
+    .data_div_class{
+        display: flex;
+        flex-direction: column;
+    }
+    .mind_class{
+        margin-top: 50px;
+        width: 300px;
+        height: 340px;
+      
+    }
+    .forh1{
+        margin-top: 50px;
+       
+    }
+    .data_mini_div{
+        margin-top: 20px;
+        width: 70px;
+        height: 70px;
+        margin-left: 15px;
+        
+    }
+    .data_mini_div_text{
+        margin-top: 20px;
+        width: 70px;
+        height: 30px;
+        font-size: 20px;
+        margin-left: 15px;
+      
+    }
+    .forh1{
+        display: none;
+    }
+    .forh1_off{
+        display: block;
+        padding: 20px;
+    }
+    #feh1{
+   
+        text-align: center;
+        font-size: 18px;
+        font-family: monospace;
+        color: rgb(0, 17, 255);
+    }
+    
+}
+
+
+
+
+.data_mini_div{
+    animation-name: rotate;  
+    animation-duration: 1s;  
+    /* animation-delay: .8s;    */
+     animation-iteration-count: infinite;   
+    animation-direction: alternate;    
+     animation-fill-mode: forwards; 
+}
+
+@keyframes rotate {
+    0%{
+        /* top: 0;
+        right: 0; */
+        transform: scale(1.9);
+        transform: rotate(0deg);
+    }
+50%{
+    transform: rotate(-10deg);
+    /* margin-right: 200px; */
+}
+    100%{
+        /* right: 0;
+        top: 650px; */
+        transform: scale(1);
+        /* position: fixed; */
+        transform: rotate(20deg);
+    }
+}
+
+.data_mini_div_text{
+    animation-name: rotate_text;  
+    animation-duration: 1s;  
+    /* animation-delay: .8s;    */
+     animation-iteration-count: infinite;   
+    animation-direction: alternate;    
+     animation-fill-mode: forwards; 
+}
+
+@keyframes rotate_text {
+    0%{
+        /* top: 0;
+        right: 0; */
+        transform: scale(1.9);
+        transform: rotate(0deg);
+    }
+50%{
+    transform: rotate(-10deg);
+    /* margin-right: 200px; */
+}
+    100%{
+        /* right: 0;
+        top: 650px; */
+        transform: scale(1);
+        /* position: fixed; */
+        transform: rotate(20deg);
+    }
+}
+
+.logo{
+    animation-name: rotate_logo;  
+    animation-duration: 3s;  
+    /* animation-delay: .8s;    */
+     animation-iteration-count: infinite;   
+    animation-direction: alternate;    
+     animation-fill-mode: forwards; 
+}
+
+@keyframes  rotate_logo {
+    0%{
+      
+        transform: scale(5);
+        transform: rotate(0deg);
+    }
+50%{
+    transform: rotate(-10deg);
+     margin-right: 20px; 
+}
+    100%{
+        
+     
+        transform: scale(1);
+        
+        transform: rotate(20deg);
+    }
+}
